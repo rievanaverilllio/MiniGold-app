@@ -71,7 +71,7 @@ const LatestProductsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-sm font-light tracking-[0.3em] uppercase text-gray-500 mb-4">
-            ZEMA TRENDS
+            MiniGold TRENDS
           </p>
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 tracking-wide">
             Latest Products
