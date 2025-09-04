@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -47,10 +48,20 @@ const Navbar = () => {
           isScrolled ? 'h-14 py-2' : 'h-16 py-3'
         }`}>
           {/* Logo */}
-          <Link href="/" className={`font-bold text-black tracking-wider transition-all duration-700 ease-out transform ${
+          <Link href="/" className={`flex items-center space-x-1 text-black tracking-wider transition-all duration-700 ease-out transform ${
             isScrolled ? 'text-xl scale-95' : 'text-2xl scale-100'
           }`}>
-            MiniGold
+            <div className={`relative transition-all duration-700 ease-out ${
+              isScrolled ? 'w-10 h-10' : 'w-12 h-12'
+            }`}>
+              <Image
+                src="/logo-minigold-removebg.png"
+                alt="MiniGold Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>MiniGold</span>
           </Link>
 
           {/* Desktop Navigation */}

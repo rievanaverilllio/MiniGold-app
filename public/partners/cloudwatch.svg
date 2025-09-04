@@ -1,0 +1,5 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="25" cy="18" rx="12" ry="8" fill="#E5E7EB"/>
+  <ellipse cx="25" cy="22" rx="15" ry="6" fill="#9CA3AF"/>
+  <text x="45" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#374151">CloudWatch</text>
+</svg>

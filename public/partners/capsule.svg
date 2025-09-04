@@ -1,0 +1,5 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="25" cy="20" r="12" stroke="#6B7280" stroke-width="2" fill="none"/>
+  <circle cx="25" cy="20" r="8" fill="#9CA3AF"/>
+  <text x="45" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#374151">Capsule</text>
+</svg>
