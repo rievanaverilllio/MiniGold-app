@@ -125,7 +125,7 @@ const Footer = () => {
               10% OFF YOUR FIRST PURCHASE
             </h3>
             <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-              Special offers for subscribers. Don't miss out on future offers, new arrivals, & expert fashion tips.
+              Special offers for subscribers. Don&apos;t miss out on future offers, new arrivals, & expert fashion tips.
             </p>
             
             {/* Email Subscription Form */}
