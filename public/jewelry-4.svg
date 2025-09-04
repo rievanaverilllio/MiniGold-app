@@ -1,0 +1,44 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="gold4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#ffc107"/>
+    </linearGradient>
+    <radialGradient id="sapphire" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#e1f5fe"/>
+      <stop offset="70%" style="stop-color:#2196f3"/>
+      <stop offset="100%" style="stop-color:#0d47a1"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#bg4)"/>
+  
+  <!-- Ring -->
+  <!-- Ring band -->
+  <ellipse cx="200" cy="220" rx="70" ry="65" fill="none" stroke="url(#gold4)" stroke-width="10"/>
+  <ellipse cx="200" cy="220" rx="60" ry="55" fill="none" stroke="url(#gold4)" stroke-width="6"/>
+  
+  <!-- Large center sapphire -->
+  <polygon points="200,110 225,135 215,170 185,170 175,135" fill="url(#sapphire)" stroke="#1976d2" stroke-width="2"/>
+  
+  <!-- Side diamonds -->
+  <circle cx="160" cy="190" r="4" fill="url(#sapphire)"/>
+  <circle cx="240" cy="190" r="4" fill="url(#sapphire)"/>
+  <circle cx="170" cy="250" r="3" fill="url(#sapphire)"/>
+  <circle cx="230" cy="250" r="3" fill="url(#sapphire)"/>
+  <circle cx="150" cy="220" r="3" fill="url(#sapphire)"/>
+  <circle cx="250" cy="220" r="3" fill="url(#sapphire)"/>
+  
+  <!-- Ring band details -->
+  <circle cx="180" cy="205" r="2" fill="url(#sapphire)"/>
+  <circle cx="220" cy="205" r="2" fill="url(#sapphire)"/>
+  <circle cx="180" cy="235" r="2" fill="url(#sapphire)"/>
+  <circle cx="220" cy="235" r="2" fill="url(#sapphire)"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="200" cy="320" rx="55" ry="15" fill="rgba(0,0,0,0.1)"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="gold3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#ffc107"/>
+    </linearGradient>
+    <radialGradient id="ruby" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffcdd2"/>
+      <stop offset="70%" style="stop-color:#f44336"/>
+      <stop offset="100%" style="stop-color:#c62828"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#bg3)"/>
+  
+  <!-- Chandelier Earrings -->
+  <!-- Central ruby -->
+  <circle cx="200" cy="160" r="12" fill="url(#ruby)" stroke="url(#gold3)" stroke-width="2"/>
+  
+  <!-- Surrounding pattern -->
+  <g stroke="url(#gold3)" stroke-width="2" fill="none">
+    <circle cx="200" cy="160" r="25"/>
+    <!-- Petal pattern -->
+    <path d="M 200 135 Q 210 145 220 140 Q 215 155 200 160 Q 185 155 180 140 Q 190 145 200 135"/>
+    <path d="M 225 160 Q 215 150 220 140 Q 235 145 240 160 Q 235 175 220 180 Q 215 170 225 160"/>
+    <path d="M 200 185 Q 190 175 180 180 Q 185 165 200 160 Q 215 165 220 180 Q 210 175 200 185"/>
+    <path d="M 175 160 Q 185 170 180 180 Q 165 175 160 160 Q 165 145 180 140 Q 185 150 175 160"/>
+  </g>
+  
+  <!-- Hanging elements -->
+  <line x1="200" y1="185" x2="200" y2="210" stroke="url(#gold3)" stroke-width="2"/>
+  <circle cx="200" cy="215" r="6" fill="url(#ruby)"/>
+  
+  <line x1="190" y1="180" x2="185" y2="205" stroke="url(#gold3)" stroke-width="1.5"/>
+  <circle cx="182" cy="208" r="4" fill="url(#ruby)"/>
+  
+  <line x1="210" y1="180" x2="215" y2="205" stroke="url(#gold3)" stroke-width="1.5"/>
+  <circle cx="218" cy="208" r="4" fill="url(#ruby)"/>
+  
+  <!-- Small decorative gems -->
+  <circle cx="185" cy="145" r="2" fill="url(#ruby)"/>
+  <circle cx="215" cy="145" r="2" fill="url(#ruby)"/>
+  <circle cx="185" cy="175" r="2" fill="url(#ruby)"/>
+  <circle cx="215" cy="175" r="2" fill="url(#ruby)"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="200" cy="320" rx="40" ry="12" fill="rgba(0,0,0,0.1)"/>
+</svg>

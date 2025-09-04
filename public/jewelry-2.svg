@@ -1,0 +1,45 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eaf6"/>
+      <stop offset="50%" style="stop-color:#c5cae9"/>
+      <stop offset="100%" style="stop-color:#9fa8da"/>
+    </linearGradient>
+    <linearGradient id="gold2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#ffc107"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#bg2)"/>
+  
+  <!-- Bracelet -->
+  <!-- Main chain links -->
+  <path d="M 80 200 Q 120 160 160 180 Q 200 200 240 180 Q 280 160 320 200 Q 280 240 240 220 Q 200 200 160 220 Q 120 240 80 200 Z" 
+        fill="none" stroke="url(#gold2)" stroke-width="8"/>
+  
+  <!-- Inner chain -->
+  <path d="M 90 200 Q 130 170 170 185 Q 200 200 230 185 Q 270 170 310 200 Q 270 230 230 215 Q 200 200 170 215 Q 130 230 90 200 Z" 
+        fill="none" stroke="url(#silver)" stroke-width="6"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="120" cy="185" r="4" fill="url(#silver)"/>
+  <circle cx="160" cy="175" r="3" fill="url(#silver)"/>
+  <circle cx="200" cy="170" r="5" fill="url(#silver)"/>
+  <circle cx="240" cy="175" r="3" fill="url(#silver)"/>
+  <circle cx="280" cy="185" r="4" fill="url(#silver)"/>
+  
+  <!-- Bottom decorative elements -->
+  <circle cx="120" cy="215" r="4" fill="url(#silver)"/>
+  <circle cx="160" cy="225" r="3" fill="url(#silver)"/>
+  <circle cx="200" cy="230" r="5" fill="url(#silver)"/>
+  <circle cx="240" cy="225" r="3" fill="url(#silver)"/>
+  <circle cx="280" cy="215" r="4" fill="url(#silver)"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="200" cy="320" rx="80" ry="15" fill="rgba(0,0,0,0.1)"/>
+</svg>

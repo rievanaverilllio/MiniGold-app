@@ -1,0 +1,38 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <radialGradient id="bg1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="50%" style="stop-color:#ffed4e"/>
+      <stop offset="100%" style="stop-color:#ffc107"/>
+    </linearGradient>
+    <radialGradient id="diamond" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="70%" style="stop-color:#e3f2fd"/>
+      <stop offset="100%" style="stop-color:#bbdefb"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#bg1)"/>
+  
+  <!-- Diamond Ring -->
+  <!-- Ring band -->
+  <ellipse cx="200" cy="200" rx="80" ry="75" fill="none" stroke="url(#gold)" stroke-width="12"/>
+  <ellipse cx="200" cy="200" rx="68" ry="63" fill="none" stroke="url(#gold)" stroke-width="8"/>
+  
+  <!-- Diamond -->
+  <polygon points="200,120 220,140 210,180 190,180 180,140" fill="url(#diamond)" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Ring details -->
+  <circle cx="160" cy="180" r="3" fill="url(#diamond)"/>
+  <circle cx="240" cy="180" r="3" fill="url(#diamond)"/>
+  <circle cx="170" cy="220" r="2" fill="url(#diamond)"/>
+  <circle cx="230" cy="220" r="2" fill="url(#diamond)"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="200" cy="320" rx="60" ry="15" fill="rgba(0,0,0,0.1)"/>
+</svg>

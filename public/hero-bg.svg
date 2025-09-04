@@ -1,0 +1,24 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0956B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8A882;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#heroGradient)"/>
+  
+  <!-- Subtle texture overlay -->
+  <rect width="1920" height="1080" fill="url(#noise)" opacity="0.1"/>
+  
+  <!-- Abstract jewelry-inspired shapes -->
+  <circle cx="400" cy="300" r="120" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.3"/>
+  <circle cx="400" cy="300" r="80" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.2"/>
+  
+  <circle cx="1500" cy="700" r="100" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.2"/>
+  <circle cx="1500" cy="700" r="60" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.15"/>
+  
+  <!-- Elegant lines -->
+  <line x1="0" y1="540" x2="1920" y2="540" stroke="#D4AF37" stroke-width="1" opacity="0.1"/>
+  <line x1="960" y1="0" x2="960" y2="1080" stroke="#D4AF37" stroke-width="1" opacity="0.1"/>
+</svg>
