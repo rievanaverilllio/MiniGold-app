@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -100,15 +101,36 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <div className="relative group">
-              <button className={`text-gray-700 hover:text-black transition-all duration-500 font-medium flex items-center transform hover:scale-105 ${
-                isScrolled ? 'text-sm opacity-90' : 'text-base opacity-100'
-              }`}>
+            <div className="relative">
+              <button
+                onMouseEnter={() => setIsResourcesOpen(true)}
+                onMouseLeave={() => setIsResourcesOpen(false)}
+                aria-expanded={isResourcesOpen}
+                className={`text-gray-700 hover:text-black transition-all duration-500 font-medium flex items-center transform hover:scale-105 ${
+                  isScrolled ? 'text-sm opacity-90' : 'text-base opacity-100'
+                }`}
+              >
                 Resources
                 <svg className={`ml-1 transition-all duration-500 ${isScrolled ? 'w-3 h-3' : 'w-4 h-4'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
+
+              {/* Dropdown (desktop): open only when isResourcesOpen is true; dropdown itself keeps open on hover */}
+              <div
+                onMouseEnter={() => setIsResourcesOpen(true)}
+                onMouseLeave={() => setIsResourcesOpen(false)}
+                className={`absolute right-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg transition-all duration-200 z-50 ${
+                  isResourcesOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'
+                }`}
+              >
+                <div className="py-2">
+                  <Link href="/blogs" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Blogs</Link>
+                  <Link href="/reviews" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Reviews</Link>
+                  <Link href="/faq" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">FAQ</Link>
+                  <Link href="/changelog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Change Log</Link>
+                </div>
+              </div>
             </div>
           </div>
 

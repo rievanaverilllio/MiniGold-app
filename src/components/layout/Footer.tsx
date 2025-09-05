@@ -22,7 +22,7 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
               PAGES
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               <li>
                 <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   About us
@@ -56,7 +56,7 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
               RESOURCES
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               <li>
                 <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   FAQ
@@ -85,9 +85,9 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
               UTILITIES
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/changelog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Changelog
                 </a>
               </li>
@@ -97,7 +97,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/privacy-policy" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Privacy Policy
                 </a>
               </li>
