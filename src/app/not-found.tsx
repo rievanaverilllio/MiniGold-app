@@ -30,16 +30,6 @@ export default function NotFound() {
       >
         BACK TO HOME
       </Link>
-
-      {/* Optional: Get Template Button (if needed) */}
-      <div className="fixed bottom-6 right-6">
-        <button className="bg-blue-600 text-white px-3 py-1.5 rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300 flex items-center gap-2 text-sm">
-          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-          </svg>
-          GET TEMPLATE
-        </button>
-      </div>
     </div>
   );
 }
