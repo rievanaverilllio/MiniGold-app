@@ -19,7 +19,7 @@ export default function NotFound() {
           We lost that page...
         </h2>
         <p className="text-gray-600 text-base max-w-md mx-auto">
-          Sorry, the page you are looking for doesn't exist or has been moved.
+          Sorry, the page you are looking for does&#39;t exist or has been moved.
         </p>
       </div>
 

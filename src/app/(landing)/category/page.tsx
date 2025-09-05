@@ -1,6 +1,6 @@
 "use client";
 
-import CategoryContainer from './_container/category.tsx';
+import CategoryContainer from './_container/category';
 
 export default function Page() {
     return <CategoryContainer />;

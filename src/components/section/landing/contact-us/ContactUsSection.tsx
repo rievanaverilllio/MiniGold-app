@@ -15,7 +15,7 @@ export default function ContactUsSection() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-        <h1 className="text-5xl md:text-6xl font-light mb-12 text-gray-900">Let's Connect</h1>
+  <h1 className="text-5xl md:text-6xl font-light mb-12 text-gray-900">Let&#39;s Connect</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <div>
@@ -56,7 +56,7 @@ export default function ContactUsSection() {
               <div className="flex items-center justify-between">
                 <label className="text-gray-700 flex items-center gap-2 text-sm">
                   <input type="checkbox" name="agree" checked={form.agree} onChange={() => setForm((s) => ({ ...s, agree: !s.agree }))} />
-                  <span>I here by agree to the <a href="/terms-conditions" className="underline">Terms & Conditions</a> of MiniGold</span>
+                  <span>I here by agree to the <a href="/terms-conditions" className="underline">Terms &amp; Conditions</a> of MiniGold</span>
                 </label>
 
                 <button className="text-gray-700 border px-6 py-3">SUBMIT NOW</button>

@@ -37,7 +37,7 @@ export default function FAQSection() {
   return (
     <section className="pb-20 pt-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-sm font-light tracking-[0.3em] uppercase text-gray-500 text-center">FAQ'S</p>
+  <p className="text-sm font-light tracking-[0.3em] uppercase text-gray-500 text-center">FAQ&#39;S</p>
         <h1 className="text-3xl md:text-3xl font-light mb-12 text-gray-900 pt-8 text-center">Frequently Asked Questions</h1>
 
         <div className="max-w-2xl mx-auto">
