@@ -30,7 +30,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Categories
+                  Category
                 </a>
               </li>
               <li>
@@ -58,12 +58,12 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/faq" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/blogs" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Blogs
                 </a>
               </li>
