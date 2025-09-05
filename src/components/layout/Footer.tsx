@@ -92,7 +92,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/licensing" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Licensing
                 </a>
               </li>
@@ -102,12 +102,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/return-policy" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Return Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/terms-conditions" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Terms & Conditions
                 </a>
               </li>
