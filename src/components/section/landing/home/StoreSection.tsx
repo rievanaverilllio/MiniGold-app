@@ -33,9 +33,9 @@ const StoreSection = () => {
               
               {/* Visit Store Button */}
               <div>
-                <button className="border border-gray-400 text-gray-700 px-6 py-2.5 text-xs font-medium tracking-[0.1em] uppercase hover:bg-gray-50 hover:border-gray-600 transition-colors duration-300">
+                <a href="/store"className="border border-gray-400 text-gray-700 px-6 py-2.5 text-xs font-medium tracking-[0.1em] uppercase hover:bg-gray-50 hover:border-gray-600 transition-colors duration-300">
                   VISIT STORE
-                </button>
+                </a>
               </div>
             </div>
 

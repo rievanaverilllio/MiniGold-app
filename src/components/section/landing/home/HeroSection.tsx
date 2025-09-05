@@ -49,9 +49,9 @@ const HeroSection = () => {
           
           {/* CTA Button */}
           <div className="mt-10">
-            <button className="bg-white/95 backdrop-blur-sm text-black px-8 py-3 text-xs font-medium tracking-[0.15em] uppercase hover:bg-white transition-all duration-300 border border-white/30 shadow-lg">
+            <a href="/collection" className="bg-white/95 backdrop-blur-sm text-black px-8 py-3 text-xs font-medium tracking-[0.15em] uppercase hover:bg-white transition-all duration-300 border border-white/30 shadow-lg">
               VIEW COLLECTION
-            </button>
+            </a>
           </div>
         </div>
       </div>

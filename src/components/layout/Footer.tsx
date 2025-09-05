@@ -68,17 +68,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Style Guide
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/404" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Error 404
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/coming-soon" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Coming Soon
                 </a>
               </li>
@@ -177,7 +172,7 @@ const Footer = () => {
         {/* Copyright Notice */}
         <div className="mt-2 pt-6 border-t border-gray-400">
           <p className="text-left text-sm text-gray-500">
-            © 2025 GoldMini. All rights reserved.
+            © 2025 MiniGold. All rights reserved.
           </p>
         </div>
       </div>
