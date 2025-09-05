@@ -6,7 +6,7 @@ export default function ExploreCollectionSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
         {/* Left content */}
         <div className="p-12 lg:p-20">
-          <h2 className="text-4xl md:text-5xl font-light text-gray-900 tracking-wide mb-6">Explore Zema Today!</h2>
+          <h2 className="text-4xl md:text-5xl font-light text-gray-900 tracking-wide mb-6">Explore MiniGold Today!</h2>
           <p className="text-gray-700 max-w-xl leading-relaxed mb-8">
             Explore our latest collections. Each piece is crafted with precision and designed to
             complement your unique style.
