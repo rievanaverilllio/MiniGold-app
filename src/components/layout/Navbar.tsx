@@ -94,7 +94,7 @@ const Navbar = () => {
               Category
             </Link>
             <Link 
-              href="/contact" 
+              href="/contact-us" 
               className={`text-gray-700 hover:text-black transition-all duration-500 font-medium transform hover:scale-105 ${
                 isScrolled ? 'text-sm opacity-90' : 'text-base opacity-100'
               }`}
@@ -193,7 +193,7 @@ const Navbar = () => {
               <Link href="/category" className="block px-3 py-2 text-gray-700 hover:text-black font-medium transition-all duration-300 hover:bg-gray-50 rounded-lg transform hover:scale-105">
                 Category
               </Link>
-              <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-black font-medium transition-all duration-300 hover:bg-gray-50 rounded-lg transform hover:scale-105">
+              <Link href="/contact-us" className="block px-3 py-2 text-gray-700 hover:text-black font-medium transition-all duration-300 hover:bg-gray-50 rounded-lg transform hover:scale-105">
                 Contact
               </Link>
               <Link href="/resources" className="block px-3 py-2 text-gray-700 hover:text-black font-medium transition-all duration-300 hover:bg-gray-50 rounded-lg transform hover:scale-105">
