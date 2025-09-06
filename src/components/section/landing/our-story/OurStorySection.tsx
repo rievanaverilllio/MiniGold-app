@@ -65,7 +65,7 @@ const OurStorySection = () => {
 
 						<div className="text-gray-600 text-sm space-y-4">
 							<p>
-								We understand that jewelry is more than just an accessory; it's an expression of your
+								We understand that jewelry is more than just an accessory; it&apos;s an expression of your
 								story, style, and identity. We are dedicated to bringing you the finest in modern and
 								stylish jewelry, meticulously crafted to complement your unique personality.
 							</p>
