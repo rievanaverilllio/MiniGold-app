@@ -1,5 +1,6 @@
 import HomeContainer from './_container/home';
 
-export default function HomePage() {
+export default async function HomePage() {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   return <HomeContainer />;
 }

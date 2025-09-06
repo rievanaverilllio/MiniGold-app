@@ -190,3 +190,20 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Loading text wave animation */
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.loading-letter {
+  display: inline-block;
+  will-change: transform;
+  animation: wave 0.75s ease-in-out infinite;
+  animation-delay: var(--i, 0s);
+}
