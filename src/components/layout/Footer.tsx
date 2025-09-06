@@ -24,7 +24,7 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/our-story" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   About us
                 </a>
               </li>
@@ -34,7 +34,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/shop" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Shop
                 </a>
               </li>
@@ -44,7 +44,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="/reviews" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Reviews
                 </a>
               </li>
