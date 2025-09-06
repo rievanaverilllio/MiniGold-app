@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 interface CartModalProps {
   isOpen: boolean;
@@ -40,7 +41,7 @@ export default function CartModal({ isOpen, onClose }: CartModalProps) {
             {/* Item 1 */}
             <div className="flex items-start gap-3">
               <div className="w-12 h-12 bg-gray-100 flex items-center justify-center rounded">
-                <img src="/jewelry-1.svg" alt="thumb" className="w-8 h-8 object-contain" />
+                <Image src="/jewelry-1.svg" alt="thumb" width={32} height={32} className="w-8 h-8 object-contain" />
               </div>
               <div className="flex-1">
                 <p className="font-semibold text-gray-800">Twilight Moon Locket</p>
@@ -55,7 +56,7 @@ export default function CartModal({ isOpen, onClose }: CartModalProps) {
             {/* Item 2 */}
             <div className="flex items-start gap-3">
               <div className="w-12 h-12 bg-gray-100 flex items-center justify-center rounded">
-                <img src="/jewelry-2.svg" alt="thumb" className="w-8 h-8 object-contain" />
+                <Image src="/jewelry-2.svg" alt="thumb" width={32} height={32} className="w-8 h-8 object-contain" />
               </div>
               <div className="flex-1">
                 <p className="font-semibold text-gray-800">Crystal Cascade Bracelet</p>

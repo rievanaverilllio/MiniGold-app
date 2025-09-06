@@ -1,4 +1,6 @@
 
+import type { CSSProperties } from 'react';
+
 export default function Loading() {
 	const text = 'Loading';
 	return (
@@ -13,7 +15,7 @@ export default function Loading() {
 						<span
 							key={idx}
 							className="loading-letter"
-							style={{ ['--i' as any]: `${idx * 0.08}s` }}
+							style={{ ['--i']: `${idx * 0.08}s` } as CSSProperties}
 							aria-hidden={ch === ' '}
 						>
 							{ch}
