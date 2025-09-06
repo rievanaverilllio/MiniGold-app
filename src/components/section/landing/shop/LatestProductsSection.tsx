@@ -137,9 +137,9 @@ const LatestProductsSection = () => {
                   }`}
                 >
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <button className="bg-white/20 backdrop-blur-sm border border-white/30 text-white px-6 py-2 text-sm font-medium tracking-wide uppercase opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-white/30 rounded-full">
+                    <a href="/product/1" className="bg-white/20 backdrop-blur-sm border border-white/30 text-white px-6 py-2 text-sm font-medium tracking-wide uppercase opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-white/30 rounded-full">
                       Quick View
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
