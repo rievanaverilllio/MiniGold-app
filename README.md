@@ -104,10 +104,6 @@ Untuk saat ini tidak ada variabel lingkungan wajib untuk menjalankan secara loka
 - Port 3000 sudah dipakai: hentikan proses lain atau jalankan `set PORT=3001; npm run dev` (PowerShell)
 - Cache bermasalah setelah upgrade: hapus `.next` dan `node_modules`, lalu `npm install` ulang
 
-## Lisensi
-
-Belum ditentukan. Tambahkan lisensi pilihan Anda (contoh: MIT) bila diperlukan.
-
 ---
 
 Dikembangkan dengan Next.js App Router dan Tailwind v4. Kontribusi dan perbaikan sangat diapresiasi.
