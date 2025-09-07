@@ -43,11 +43,11 @@ const Footer = () => {
                   Contact us
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/reviews" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Reviews
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
