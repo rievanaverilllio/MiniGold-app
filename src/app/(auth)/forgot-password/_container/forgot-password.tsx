@@ -24,7 +24,7 @@ export default function ForgotPassword() {
         <div className="w-full max-w-md">
           <h1 className="text-center text-4xl font-serif mb-6">Forgot password</h1>
           <p className="text-center text-sm text-muted-foreground mb-8">
-            Enter your email and we'll send you a link to reset your password.
+            Enter your email and we&apos;ll send you a link to reset your password.
           </p>
 
           {!sent ? (
@@ -54,7 +54,7 @@ export default function ForgotPassword() {
             <div className="rounded-md border border-muted p-6 text-center">
               <h2 className="text-lg font-medium mb-2">Check your email</h2>
               <p className="text-sm text-muted-foreground mb-4">
-                If an account with <strong>{email}</strong> exists, we've sent a password reset link.
+                If an account with <strong>{email}</strong> exists, we&apos;ve sent a password reset link.
               </p>
               <Link href="/sign-in">
                 <Button variant="outline">Back to sign in</Button>
