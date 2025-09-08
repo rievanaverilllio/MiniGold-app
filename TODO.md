@@ -21,7 +21,7 @@ Dokumen ini merangkum pekerjaan yang akan dikerjakan, prioritas, dan kriteria se
 	- Tambah/hapus/ubah jumlah item, subtotal, estimasi ongkir placeholder
 	- DoD: cart berjalan end-to-end di client, data tetap ada saat reload
 
-- [ ] Halaman Auth (login/register/forgot)
+- [ ] Halaman Auth (signin/singup/forgot)
 	- Form + validasi (client/server action sederhana)
 	- Rencana integrasi auth (NextAuth atau custom) — tunda backend dulu
 	- DoD: form berfungsi, validasi tampil, arsitektur siap disambungkan ke API
