@@ -108,7 +108,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/terms-conditions" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Terms & Conditions
+                  Terms &amp; Conditions
                 </a>
               </li>
             </ul>
