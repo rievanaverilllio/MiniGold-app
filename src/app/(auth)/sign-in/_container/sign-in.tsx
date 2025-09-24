@@ -46,7 +46,7 @@ export default function SignIn() {
 					</div>
 
 					<div className="flex items-center justify-between text-sm text-muted-foreground">
-						<span>Don't have an account?</span>
+						<span>Don&apos;t have an account?</span>
 						<Link href="/sign-up" className="text-primary underline">Sign Up</Link>
 					</div>
 				</form>

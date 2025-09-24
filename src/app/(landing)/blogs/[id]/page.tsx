@@ -3,12 +3,10 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { getArticleById } from '@/data/articles';
 
-interface BlogDetailPageProps {
-  params: { id: string };
-}
-
-export default function BlogDetailPage({ params }: BlogDetailPageProps) {
-  const numericId = Number(params.id);
+export default async function BlogDetailPage({ params }: { params?: Promise<{ id: string }> }) {
+  const resolved = params ? await params : undefined;
+  if (!resolved) notFound();
+  const numericId = Number(resolved.id);
   if (Number.isNaN(numericId)) notFound();
   const article = getArticleById(numericId);
   if (!article) notFound();

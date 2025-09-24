@@ -12,8 +12,8 @@ export default function ErrorStatus() {
       <main className="flex-1 flex items-center justify-center py-24 px-4">
         <div className="w-full max-w-md text-center">
           <h1 className="text-4xl font-semibold mb-4">Something went wrong</h1>
-          <p className="text-muted-foreground mb-6">We couldn't complete your request. Please try again or contact support.</p>
-          <Link href="/auth/sign-in">
+          <p className="text-muted-foreground mb-6">We couldn&apos;t complete your request. Please try again or contact support.</p>
+          <Link href="/sign-in">
             <Button variant="outline">Back to sign in</Button>
           </Link>
         </div>

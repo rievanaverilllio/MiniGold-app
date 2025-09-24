@@ -13,7 +13,7 @@ export default function SuccessStatus() {
         <div className="w-full max-w-md text-center">
           <h1 className="text-4xl font-semibold mb-4">Success</h1>
           <p className="text-muted-foreground mb-6">Your action completed successfully. Check your email for next steps.</p>
-          <Link href="/auth/sign-in">
+          <Link href="/sign-in">
             <Button>Back to sign in</Button>
           </Link>
         </div>

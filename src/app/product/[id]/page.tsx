@@ -5,12 +5,11 @@ import Footer from '../../../components/layout/Footer'
 import CareInstructions from '../../../components/section/landing/product/CareInstructions'
 import { getProductById } from '../../../data/products'
 
-interface ProductPageProps {
-  params: { id: string }
-}
-
-export default function ProductPage({ params }: ProductPageProps) {
-  const numericId = Number(params.id)
+// Adapt to Next.js canary PageProps where params may be Promise-wrapped.
+export default async function ProductPage({ params }: { params?: Promise<{ id: string }> }) {
+  const resolved = params ? await params : undefined
+  if (!resolved) notFound()
+  const numericId = Number(resolved.id)
   if (Number.isNaN(numericId)) {
     notFound()
   }
