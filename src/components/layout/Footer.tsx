@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -24,24 +25,16 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href="/our-story" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  About us
-                </a>
+                <Link href="/our-story" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">About us</Link>
               </li>
               <li>
-                <a href="/category" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Category
-                </a>
+                <Link href="/category" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Category</Link>
               </li>
               <li>
-                <a href="/shop" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Shop
-                </a>
+                <Link href="/shop" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Shop</Link>
               </li>
               <li>
-                <a href="/contact-us" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Contact us
-                </a>
+                <Link href="/contact-us" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact us</Link>
               </li>
               {/* <li>
                 <a href="/reviews" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
@@ -58,24 +51,16 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href="/faq" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  FAQ
-                </a>
+                <Link href="/faq" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">FAQ</Link>
               </li>
               <li>
-                <a href="/blogs" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Blogs
-                </a>
+                <Link href="/blogs" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Blogs</Link>
               </li>
               <li>
-                <a href="/404" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Error 404
-                </a>
+                <Link href="/404" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Error 404</Link>
               </li>
               <li>
-                <a href="/coming-soon" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Coming Soon
-                </a>
+                <Link href="/coming-soon" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Coming Soon</Link>
               </li>
             </ul>
           </div>
@@ -87,29 +72,19 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href="/changelog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Changelog
-                </a>
+                <Link href="/changelog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Changelog</Link>
               </li>
               <li>
-                <a href="/licensing" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Licensing
-                </a>
+                <Link href="/licensing" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Licensing</Link>
               </li>
               <li>
-                <a href="/privacy-policy" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Privacy Policy
-                </a>
+                <Link href="/privacy-policy" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Privacy Policy</Link>
               </li>
               <li>
-                <a href="/return-policy" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Return Policy
-                </a>
+                <Link href="/return-policy" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Return Policy</Link>
               </li>
               <li>
-                <a href="/terms-conditions" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Terms &amp; Conditions
-                </a>
+                <Link href="/terms-conditions" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Terms &amp; Conditions</Link>
               </li>
             </ul>
           </div>
