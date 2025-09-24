@@ -4,7 +4,7 @@ import BestSellersSection from '@/components/section/landing/home/BestSellersSec
 import AboutSection from '@/components/section/landing/home/AboutSection';
 import PartnersSection from '@/components/section/landing/home/PartnersSection';
 import CategoriesSection from '@/components/section/landing/home/CategoriesSection';
-import LatestProductsSection from '@/components/section/landing/home/LatestProductsSection';
+import LatestProductsSection from '@/components/section/landing/shop/LatestProductsSection';
 import ServicesSection from '@/components/section/landing/home/ServicesSection';
 import StoreSection from '@/components/section/landing/home/StoreSection';
 import LatestArticlesSection from '@/components/section/landing/home/LatestArticlesSection';

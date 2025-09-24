@@ -1,49 +1,17 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
-
-interface Product {
-  id: number;
-  name: string;
-  price: string;
-  image: string;
-  category: string;
-}
+import Link from 'next/link';
+import { useState, useMemo } from 'react';
+import { getAllProducts } from '../../../../data/products';
 
 const BestSellersSection = () => {
   const [hoveredProduct, setHoveredProduct] = useState<number | null>(null);
 
-  const products: Product[] = [
-    {
-      id: 1,
-      name: "Lustrous Diamond Ring",
-      price: "$ 956.40 USD",
-      image: "/hero-bg.jpg",
-      category: "Ring"
-    },
-    {
-      id: 2,
-      name: "Crystal Cascade Bracelet",
-      price: "$ 630.00 USD",
-      image: "/hero-bg.jpg",
-      category: "Bracelet"
-    },
-    {
-      id: 3,
-      name: "Radiant Ruby Chandeliers",
-      price: "$ 495.90 USD",
-      image: "/hero-bg.jpg",
-      category: "Earrings"
-    },
-    {
-      id: 4,
-      name: "Twilight Sapphire Necklace",
-      price: "$ 650.70 USD",
-      image: "/hero-bg.jpg",
-      category: "Ring"
-    }
-  ];
+  // For now pick first 4 as best sellers (placeholder logic)
+  const products = useMemo(() => {
+    return getAllProducts().slice(0, 4);
+  }, []);
 
   return (
     <section className="py-20 bg-white">
@@ -61,11 +29,13 @@ const BestSellersSection = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
           {products.map((product) => (
-            <div
+            <Link
               key={product.id}
-              className="group cursor-pointer"
+              href={`/product/${product.id}`}
+              className="group cursor-pointer block"
               onMouseEnter={() => setHoveredProduct(product.id)}
               onMouseLeave={() => setHoveredProduct(null)}
+              prefetch
             >
               {/* Product Image Container */}
               <div className="relative overflow-hidden mb-2 aspect-square">
@@ -96,10 +66,10 @@ const BestSellersSection = () => {
                   {product.name}
                 </h3>
                 <p className="text-gray-600 font-light tracking-wide font-small">
-                  {product.price}
+                  {Intl.NumberFormat('en-US', { style: 'currency', currency: product.currency }).format(product.price)}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

@@ -1,27 +1,18 @@
 "use client";
 
 import Image from 'next/image';
-import { useState } from 'react';
+import Link from 'next/link';
+import { useState, useMemo } from 'react';
+import { getAllArticles } from '@/data/articles';
 
 export default function LatestArticlesSection() {
-  const articles = Array.from({ length: 18 }).map((_, i) => ({
-    id: i + 1,
-    title:
-      i % 3 === 0
-        ? 'How to maintain and care for your jewelry'
-        : i % 3 === 1
-        ? 'Choose the perfect gemstones for yourself'
-        : 'Art of layered necklace looks with style tip',
-    date: 'Jul 3, 2024',
-    image: '/hero-bg.jpg',
-  }));
-
   const ITEMS_PER_PAGE = 6; // 3 cols x 2 rows
   const [page, setPage] = useState(1);
-  const pageCount = Math.ceil(articles.length / ITEMS_PER_PAGE);
 
+  const allArticles = useMemo(() => getAllArticles(), []);
+  const pageCount = Math.ceil(allArticles.length / ITEMS_PER_PAGE);
   const start = (page - 1) * ITEMS_PER_PAGE;
-  const visible = articles.slice(start, start + ITEMS_PER_PAGE);
+  const visible = allArticles.slice(start, start + ITEMS_PER_PAGE);
 
   return (
     <section className="py-20 bg-white">
@@ -32,16 +23,18 @@ export default function LatestArticlesSection() {
         </div>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {visible.map((a) => (
-            <article key={a.id} className="group text-left">
-              <div className="relative overflow-hidden mb-4 h-64 bg-gray-100">
-                <Image src={a.image} alt={a.title} fill className="object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-
-              <h3 className="mt-2 text-lg md:text-lg font-light text-gray-900 leading-tight">{a.title}</h3>
-              <time className="block mt-1 text-sm text-gray-500">{a.date}</time>
-            </article>
-          ))}
+          {visible.map((a) => {
+            const dateLabel = new Date(a.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
+            return (
+              <Link key={a.id} href={`/blogs/${a.id}`} className="group text-left block" prefetch>
+                <div className="relative overflow-hidden mb-4 h-64 bg-gray-100">
+                  <Image src={a.image} alt={a.title} fill className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                </div>
+                <h3 className="mt-2 text-lg md:text-lg font-light text-gray-900 leading-tight group-hover:text-gray-700 transition-colors">{a.title}</h3>
+                <time className="block mt-1 text-sm text-gray-500">{dateLabel}</time>
+              </Link>
+            );
+          })}
         </div>
 
         {/* Pagination controls */}

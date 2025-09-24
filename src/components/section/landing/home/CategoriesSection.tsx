@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const CategoriesSection = () => {
   const categories = [
@@ -43,11 +44,12 @@ const CategoriesSection = () => {
         {/* Categories Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((category) => (
-            <div
+            <Link
               key={category.id}
-              className="group cursor-pointer"
+              href={`/category?name=${encodeURIComponent(category.name.toLowerCase())}`}
+              prefetch
+              className="group cursor-pointer block"
             >
-              {/* Category Image */}
               <div className="relative aspect-[4/5] overflow-hidden mb-4">
                 <Image
                   src={category.image}
@@ -55,18 +57,14 @@ const CategoriesSection = () => {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                
-                {/* Overlay */}
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                {/* Category Name Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-white text-xl font-medium tracking-wide">
                     {category.name}
                   </h3>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
